@@ -1,0 +1,31 @@
+{
+  "name": "javascript-validations",
+  "version": "1.0.0",
+  "description": "Sample JS utilities library",
+  "main": "dist/javascript-validations.cjs.js",
+  "module": "dist/javascript-validations.esm.js",
+  "browser": "dist/javascript-validations.umd.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "node test/spec",
+    "pretest": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garkgodwin/javascript-validations.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garkgodwin/javascript-validations/issues"
+  },
+  "homepage": "https://github.com/garkgodwin/javascript-validations#readme",
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "rollup": "^2.79.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  }
+}

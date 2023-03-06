@@ -4,7 +4,7 @@
  * @param {!boolean} allowEmpty set true if you want to allow empty text and false if not.
  * @param {!number} length length to be used for validation of the text paramater.
  */
-module.exports = (text, allowEmpty = true, length = 0) => {
+const validateText = (text, allowEmpty = true, length = 0) => {
   if (text === null || text === undefined) {
     return true;
   }
@@ -24,3 +24,5 @@ module.exports = (text, allowEmpty = true, length = 0) => {
   }
   return false;
 };
+
+module.exports = validateText;
